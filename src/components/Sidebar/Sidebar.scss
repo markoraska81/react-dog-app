@@ -30,5 +30,13 @@
 
   &__link {
     color: set-text-color(#000);
+
+    &.active {
+      color: $red;
+    }
+
+    &:hover {
+      color: $red;
+    }
   }
 }
