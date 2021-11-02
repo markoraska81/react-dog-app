@@ -1,0 +1,21 @@
+@import '../../App.scss';
+
+/***** BUTTON STYLE *****/
+// LOAD
+.btn-load {
+  display: inline-block;
+  width: auto;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  background-color: $red;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  letter-spacing: 4px;
+  transition: all 250ms ease-in-out;
+
+  &:hover {
+    background-color: darken($red, 20);
+  }
+}

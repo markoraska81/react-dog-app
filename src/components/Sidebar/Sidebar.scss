@@ -1,0 +1,34 @@
+@import '../../App.scss';
+
+/***** SIDEBAR STYLE *****/
+// SIDEBAR
+.sidebar {
+  position: fixed;
+  top: 69px;
+  right: 100%;
+  width: 100%;
+  height: 100%;
+  @include flexBox(flex-start, flex-start);
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-right: solid 0.03rem rgb(219, 218, 218);
+  transition: 0.45s linear;
+  z-index: 999999999;
+}
+
+// SIDEBAR MENU
+.sidebar-menu {
+  @include flexBox(flex-start, flex-start);
+  flex-direction: column;
+  width: 100%;
+  text-transform: uppercase;
+
+  &__item {
+    @include wrapper(90%, 0 auto);
+    padding: 1rem 0;
+  }
+
+  &__link {
+    color: set-text-color(#000);
+  }
+}

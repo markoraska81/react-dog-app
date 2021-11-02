@@ -1,0 +1,36 @@
+@import '../../App.scss';
+
+/***** NAVBAR STYLE *****/
+
+// NAVBAR
+.navbar {
+  @include wrapper(90%, 0 auto);
+  @include flexBox(space-between, center);
+
+  // MENU
+  &-menu {
+    display: none;
+
+    // MEDIA QUERY
+    @include laptop {
+      display: flex;
+      gap: 1rem;
+    }
+
+    &__link {
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      color: set-text-color(#000);
+      letter-spacing: 1px;
+      transition: all 0.4s ease-in-out;
+
+      &.active {
+        color: $red;
+      }
+
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+}

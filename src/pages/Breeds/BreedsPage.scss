@@ -1,0 +1,12 @@
+@import '../../sass/config';
+
+/***** BREEDS STYLE *****/
+.breeds {
+  @include wrapper(90%, auto);
+  min-height: calc(92vh - 40px);
+
+  // BODY
+  &-body {
+    margin: 2rem 0;
+  }
+}

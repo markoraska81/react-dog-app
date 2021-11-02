@@ -1,0 +1,64 @@
+@import '../../App.scss';
+
+/***** MODAL STYLE *****/
+.modal {
+  @include flexBox(center, center);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+
+  &-overlay {
+    @include flexBox(center, center);
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 50px;
+
+    img {
+      border: 2px solid rgb(153, 153, 153);
+      border-radius: 4px;
+      padding: 10px;
+      width: 250px;
+      height: auto;
+
+      // MEDIA QUERY
+      @include tablet {
+        width: 600px;
+      }
+
+      @include laptop {
+        width: 800px;
+        height: 600px;
+      }
+    }
+  }
+
+  // BODY
+  &-body {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0.5rem;
+    padding: 0 0.5rem;
+    font-size: 1.2rem;
+    color: set-text-color(#000);
+
+    i {
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+  }
+
+  .btn-box {
+    @include flexBox(center, center);
+    gap: 0.5rem;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,15 @@
+@import './sass/config';
+@import './sass/generalStyle';
+@import './sass/typography';
+
+/***** HEADER STYLE *****/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem 0;
+  background-color: #000;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.85);
+  z-index: 99;
+}

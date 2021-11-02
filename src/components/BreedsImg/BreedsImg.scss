@@ -1,0 +1,32 @@
+@import '../../sass/config';
+
+/***** BREEDS IMG STYLE *****/
+.breeds-img {
+  overflow: hidden;
+  border-radius: 0.4rem;
+  cursor: pointer;
+
+  // MEDIA QUERY
+  @include tablet {
+    width: 47%;
+    height: 28rem;
+  }
+
+  @include desktop {
+    width: 32%;
+  }
+
+  img {
+    width: 47%;
+    height: 100%;
+    object-fit: cover;
+    transition: $ease-in-out;
+    opacity: 0.8;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+  }
+}
